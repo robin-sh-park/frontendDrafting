@@ -8,7 +8,7 @@ ul{
   margin: 0;
   padding: 0;
   width: 25%;
-  background-color:rgb(240,229,220);
+  background-color: rgb(240,229,220);
   height: 100%; /*full height*/
   position: fixed; /*make it stick, even on scroll*/
   overflow: auto; /* enable scrolling if sidenav has too much content */
@@ -35,5 +35,6 @@ h3{
   text-indent: 30%;
 }
 form.field{
+  text-indent: 25%;
   text-align: right;
 }
