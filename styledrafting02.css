@@ -3,18 +3,6 @@ body {
   color: rgb(65, 113, 156);
 }
 
-/* navigation bar */
-.navigation_bar{
-  list-style-type: none; /*removes bullet marks in list*/
-  margin: 0;
-  padding: 0;
-  width: 150px;
-  background-color: rgb(240,229,220);
-  height: 100%; /*full height*/
-  position: absolute; /*make it stick, even on scroll*/
-  overflow: auto; /* enable scrolling if sidenav has too much content */
-}
-
 #main_body {
   border-radius: 25px;
   background-color: rgb(240,229,220);
@@ -22,19 +10,35 @@ body {
   padding: 20px; /*clears area around content*/
   margin: 20px; /*clears area outside border*/
   width: 90%;
-  height: 90%;
+  height: 800px;
 }
 
-.profile_field {
+.column{
+  float:left;
+  padding: 10px;
+}
+
+.column.left{
+  width: 25%;
+}
+
+.column.middle{
+  width: 50%;
+
   background-color: #FFFFFF;
-  border-radius: 25px;
+  border-radius: 15px;
   border: 1px solid rgb(65, 113, 156);
-  margin: 150px;
-  padding: 20px;
-  width: 75%;
-  height: 250px;
+  padding: 10px;
+  height: 90%;
+  overflow-y: auto; /*hidden, visible, scroll, auto*/
 }
 
-.tag_list{
+.column.right{
+  width: 25%;
+}
 
+.main_content:after{
+  content: "";
+  display: table;
+  clear: both;
 }

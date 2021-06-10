@@ -1,0 +1,40 @@
+body {
+
+}
+
+/* navigation bar */
+ul{
+  list-style-type: none; /*removes bullet marks in list*/
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: rgb(240,229,220);
+  height: 100%; /*full height*/
+  position: fixed; /*make it stick, even on scroll*/
+  overflow: auto; /* enable scrolling if sidenav has too much content */
+}
+
+li a{
+  display: block;
+  color: grey;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: #FFFFFF;
+  color: grey;
+}
+
+.active{
+  background-color: #DDC5AD;
+  color: white;
+}
+
+h3{
+  text-indent: 30%;
+}
+form.field{
+  text-indent: 25%;
+  text-align: right;
+}

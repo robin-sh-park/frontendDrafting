@@ -1,40 +1,62 @@
 body {
-
+  background-color: #DDC5AD;
+  color: rgb(65, 113, 156);
 }
 
 /* navigation bar */
-ul{
+.navigation_bar{
+  float:left;
   list-style-type: none; /*removes bullet marks in list*/
   margin: 0;
   padding: 0;
-  width: 25%;
+  width: 150px;
   background-color: rgb(240,229,220);
-  height: 100%; /*full height*/
-  position: fixed; /*make it stick, even on scroll*/
-  overflow: auto; /* enable scrolling if sidenav has too much content */
+  height: 90%; /*full height is 100%*/
+  position: absolute; /*make it stick, even on scroll*/
+  overflow-y: scroll; /*hidden, visible, scroll, auto*/
+  overflow-x: visible;
 }
 
-li a{
-  display: block;
-  color: grey;
-  padding: 8px 16px;
+#main_body {
+  border-radius: 25px;
+  background-color: rgb(240,229,220);
+  border: 2px solid rgb(65, 113, 156);
+  padding: 20px; /*clears area around content*/
+  margin: 20px; /*clears area outside border*/
+  width: 90%;
+  height: 800px;
+}
+
+a{
   text-decoration: none;
+  color: black;
 }
 
-li a:hover{
-  background-color: #FFFFFF;
-  color: grey;
-}
-
-.active{
+.photo{
+  display:inline-block;
+  border-radius: 15px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgb(65, 113, 156);
   background-color: #DDC5AD;
-  color: white;
 }
 
-h3{
-  text-indent: 30%;
+.profile_field {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  border: 1px solid rgb(65, 113, 156);
+  margin-left: 150px;
+  margin-right: 50px;
+  padding: 10px;
+  width: 55%;
+  height: 90%;
+  overflow-y: auto; /*hidden, visible, scroll, auto*/
 }
-form.field{
-  text-indent: 25%;
-  text-align: right;
+
+.tag_list{
+  float: right;
+  margin-right: 0;
+  padding: 0px;
+  height:90%;
+  width: 5%; /*edit*/
 }
