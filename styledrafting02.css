@@ -42,3 +42,13 @@ body {
   display: table;
   clear: both;
 }
+
+.photo{
+  display:inline-block;
+  border-radius: 15px;
+  width: 110px;
+  height: 110px;
+  border: 1px solid rgb(65, 113, 156);
+  background-color: #DDC5AD;
+  padding: 5px;
+}
