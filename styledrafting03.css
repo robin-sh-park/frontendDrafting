@@ -27,10 +27,17 @@ body {
   height: 800px;
 }
 
+header#tag_search{
+  float:right;
+}
+
+
 a{
   text-decoration: none;
   color: black;
 }
+
+
 
 .photo{
   display:inline-block;
