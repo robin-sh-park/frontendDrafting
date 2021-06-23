@@ -39,7 +39,10 @@
       <div class="profile_field">
         <header>
           <h5>프로필을 수정할 수 있습니다</h5>
+          <hr> <!--horizontal line-->
         </header>
+
+
 
         <!--https://codepen.io/mudassar257/pen/YxqGKL-->
         <div class="media-container">
@@ -55,6 +58,42 @@
           <button type="button" class="edit-profile">Edit Profile</button>
           <button type="button" class="save-profile">Save Profile</button>
         </div>
+
+
+        <div class="navigation_bar_preview">
+
+          <form class="field" action="index.html" method="post">
+            <input type="file" id="actual-btn" name="" value="">
+            <!--label for="actual-btn">No file chosen</label-->
+
+
+            <br>
+            <label for="nickname">닉네임: </label>
+            <input type="text" name="" value="">
+            <br>
+            <label for="email">이메일: </label>
+            <input type="text" name="" value="">
+            <br>
+            <label for="password">비밀번호: </label>
+            <input type="password" name="" value="">
+            <br>
+            <label for="birthday">생년월일: </label>
+            <input type="date" id="birthday" name="birthday" value="">
+            <br>
+            <label for="gender">성별: </label>
+            <select id="gender" name="gender" value="choose">
+              <option value="" disabled selected> choose...</option>
+              <option value="male">남자</option>
+              <option value="female">여자</option>
+              <option value="other">기타</option>
+            </select>
+            <br>
+
+            <input type="submit" name="저장" value="저장">
+
+          </form>
+        </div>
+
 
       </div>
 

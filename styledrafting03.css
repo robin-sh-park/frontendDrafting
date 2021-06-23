@@ -125,8 +125,25 @@ img{
 .save-profile{}
 
 
+  /* navigation bar */
+  .navigation_bar_preview{
+    float: center;
+    list-style-type: none; /*removes bullet marks in list*/
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    background-color: rgb(240,229,220);
+    height: 80%; /*full height is 100%*/
+    position: relative; /*make it stick, even on scroll*/
+    overflow-y: scroll; /*hidden, visible, scroll, auto*/
+    overflow-x: visible;
+  }
+
+
+
 
 .tag_list{
+  position: relative;
   float: right;
   margin-right: 0;
   padding: 0px;
