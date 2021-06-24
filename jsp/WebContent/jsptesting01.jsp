@@ -70,30 +70,39 @@
 				<input type="file" id="actual-btn" name="" value="">
 		            <!--label for="actual-btn">No file chosen</label-->
 		
-		
-		            <br>
-		            <label for="nickname">닉네임: </label>
-		            <input type="text" name="" value="">
-		            <br>
-		            <label for="email">이메일: </label>
-		            <input type="text" name="" value="">
-		            <br>
-		            <label for="password">비밀번호: </label>
-		            <input type="password" name="" value="">
-		            <br>
-		            <label for="birthday">생년월일: </label>
-		            <input type="date" id="birthday" name="birthday" value="">
-		            <br>
-		            
-				<label for="gender">성별:</label>
-				<select id="gender" name="gender" size="1">
-					<option value="">선택...</option>
-					<option value="male">남자</option>
-					<option value="female">여자</option>
-					<option value="notShown">표시 안함</option>
-				</select> 
+					<table>
+			            <tr>
+				            <td><label for="nickname">닉네임: </label></td>
+				            <td><input type="text" name="" value=""></td>
+			            </tr>
+			            <tr>
+			            	<td><label for="email">이메일: </label></td>
+			            	<td><input type="text" name="" value=""></td>
+			            </tr>
+			            <tr>
+			            	<td><label for="password">비밀번호: </label></td>
+			            	<td><input type="password" name="" value=""></td>
+			            </tr>
+			            <tr>
+			            	<td><label for="birthday">생년월일: </label></td>
+			            	<td><input type="date" id="birthday" name="birthday" value=""></td>
+			            </tr>
+			            <tr>
+							<td><label for="gender">성별:</label></td>
+							<td>
+							<select id="gender" name="gender" size="1">
+								<option value="">선택...</option>
+								<option value="male">남자</option>
+								<option value="female">여자</option>
+								<option value="notShown">표시 안함</option>
+							</select>
+							</td>
+						</tr>
+						<tr align="center">
+							<td><input type="submit" name="저장" value="저장"></td>
+						</tr> 
+					</table>
 				
-				<input type="submit" name="저장" value="저장">
 				
 			</form>
 	        </div>
