@@ -7,7 +7,6 @@ body{
 }
 
 #background{
-
 	border-radius: 25px;
 	background-color: rgb(240,229,220);
 	border: 2px solid rgb(65, 113, 156);
@@ -21,11 +20,12 @@ header{
 	display: block;
 }
 
-#tag_search{
+#tag_search{/*for search part of header*/
 	float: right;
+	flex-direction: row-reverse;
 }
 
-#main_body{
+#main_body{/*left_column, middle_column, right_column*/
 	display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -39,7 +39,7 @@ header{
 	display: table-cell;*/
 }
 
-a{
+a{/*for all links*/
   text-decoration: none;
   color: black;
 }
@@ -73,8 +73,7 @@ a{
 
 img{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   width: auto;
   padding: 10px;
 }
@@ -89,7 +88,7 @@ img{
 	margin-left: 150px;
 	margin-right: 0;
   */
-  flex: 6;
+  flex: 5;
 	background-color: #FFFFFF;
 	border-radius: 15px;
 	border: 1px solid rgb(65, 113, 156);
@@ -100,11 +99,21 @@ img{
 }
 
 
-.img-object{
-	display: block;
+figure{
+	position: relative;
+	display: inline-block;
+	margin: auto;
 	width: 200px;
 	height: 200px;
+	vertical-align: middle;
 }
+
+	.img-object{
+		display: block;
+		border-radius: 50%;
+		width: 200px;
+		height: 200px;
+	}
 
   /* navigation bar */
   .navigation_bar_preview{
@@ -119,7 +128,18 @@ img{
     overflow-x: auto;
   }
 
+figure{
+	display: block;
+	width: 200px;
+	height: 200px;
+}
 
+	.img-object{
+		display: block;
+		border-radius: 50%;
+		width: 200px;
+		height: 200px;
+	}
 
 
 
@@ -133,5 +153,5 @@ img{
   width: 25%;
   height: 80%;
 	text-align: right;
-
+	padding:inherit;
 }

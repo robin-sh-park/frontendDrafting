@@ -9,7 +9,7 @@
 
 
   <!--배경-->
-	<div id="background">
+<div id="background">
 	   <!--위에 버튼-->
       <header>
 				<form>
@@ -18,14 +18,14 @@
 
 	        <button type="button" name="write">글 쓰기</button>
 
-	        <input type="text" id="tag_search" name="tag_search" value="">
+	        <input type="search" id="tag_search" name="tag_search" placeholder="키워드 검색...">
 
 	        <input type="submit" id="tag_search" name="search" value="검색">
 				</form>
       </header>
-<hr> <!--horizontal line-->
-<div id="main_body">
-      <!--COLUMN 1: 내비게이션 바-->
+			<hr> <!--horizontal line-->
+	<div id="main_body">
+      <!--COLUMN 1: 내비게이션 바/현재 프로필 표시 바-->
       <div id="left_column">
         <div class="photo">
           <img src="jebsy.jpg"> <!-- 현재 프로필 사진 -->
@@ -34,6 +34,9 @@
         <p>닉네임</p>
         <button type="button" name="my_info">내 정보</button>
         <p>status...</p>
+				<br>
+				<br>
+				<br>
         <p>생년월일</p>
         <p>성별</p>
         <p>email</p>
@@ -60,32 +63,32 @@
 		        <input type="file" name="pfpic" accept="image/*">
 
 				<table>
-		            <tr>
-			            <td><label for="nickname">닉네임: </label></td>
-			            <td><input type="text" name="nickname" value=""></td>
-		            </tr>
-		            <tr>
-		            	<td><label for="email">이메일: </label></td>
-		            	<td><input type="email" id="email" name="email" value=""></td>
-		            </tr>
-		            <tr>
-		            	<td><label for="password">비밀번호: </label></td>
-		            	<td><input type="password" id="password" name="password" value=""></td>
-		            </tr>
-		            <tr>
-		            	<td><label for="birthday">생년월일: </label></td>
-		            	<td><input type="date" id="birthday" name="birthday" value=""></td>
-		            </tr>
-		            <tr>
-						<td><label for="gender">성별:</label></td>
-						<td>
-  						<select id="gender" name="gender" size="1">
-  							<option value="">선택...</option>
-  							<option value="male">남자</option>
-  							<option value="female">여자</option>
-  							<option value="notShown">표시 안함</option>
-  						</select>
-						</td>
+		       <tr>
+			          <td><label for="nickname">닉네임: </label></td>
+			          <td><input type="text" name="nickname" value=""></td>
+		       </tr>
+		       <tr>
+		        		<td><label for="email">이메일: </label></td>
+		            <td><input type="email" id="email" name="email" value=""></td>
+		       </tr>
+		       <tr>
+		            <td><label for="password">비밀번호: </label></td>
+		            <td><input type="password" id="password" name="password" value=""></td>
+		       </tr>
+		       <tr>
+		         		<td><label for="birthday">생년월일: </label></td>
+		         		<td><input type="date" id="birthday" name="birthday" value=""></td>
+		       </tr>
+		       <tr>
+							<td><label for="gender">성별:</label></td>
+							<td>
+	  						<select id="gender" name="gender" size="1">
+	  							<option value="" disabled selected>선택...</option>
+	  							<option value="male">남자</option>
+	  							<option value="female">여자</option>
+	  							<option value="notShown">표시 안함</option>
+	  						</select>
+							</td>
 					</tr>
 					<tr>
 						<td><label for="status">상태 메세지:</label></td>
@@ -113,8 +116,8 @@
           <!--END COLUMN 3-->
 
 
-      </div><!--end tag for div main_body-->
-    </div><!--end tag for div background-->
+  </div><!--end tag for div main_body-->
+</div><!--end tag for div background-->
 
 </body>
 </html>
