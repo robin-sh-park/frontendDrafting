@@ -94,8 +94,15 @@ img{
 	border: 1px solid rgb(65, 113, 156);
 	margin: 0 auto;
 	padding: 10px;
-	height: 90%;
+	height: 700px; /*90%*/
 	overflow-y: scroll;
+}
+
+
+form#verify_id {
+	margin: auto;
+	padding: 70px;
+	text-align: center;
 }
 
 
